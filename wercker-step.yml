@@ -1,0 +1,23 @@
+name: ac6-build
+version: 0.0.1
+description: ac6 stm32 system workbench project build
+properties:
+  project_name:
+    type: string
+    required: true
+  eclipse_path:
+    type: string
+    required: false
+    default: /root/Ac6/SystemWorkbench/eclipse
+  workspace_path:
+    type: string
+    required: false
+    default: /root/workspace
+  build_config:
+    type: string
+    required: false
+    default: Release
+  wercker_root:
+    type: string
+    required: false
+    default: $WERCKER_ROOT
